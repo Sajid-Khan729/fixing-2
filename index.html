@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=ADLaM+Display&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sora:wght@100..800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Quicksand:wght@300..700&family=Raleway:ital,wght@0,100..900;1,100..900&family=Sora:wght@100..800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&family=Raleway:ital,wght@0,100..900;1,100..900&family=Sora:wght@100..800&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+              }
+            }
+          }
+        }
+      </script>
+      <!----DaisyUI----->
+      <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
+      <script src="https://cdn.tailwindcss.com"></script>
+
+      <style>
+    
+
+        .poppins{
+        font-family: "Poppins", serif;
+        font-style: normal;
+}
+
+        .sora{
+            font-family: "sora" ,serif;
+            font-style: normal;
+        }
+
+        .adlam{
+            font-family: "ADLaM Display", serif;
+        }
+      </style>
+</head>
+<body class="poppins">
+<!---Navbar and heroSec ----->
+<section class="w-full bg-gradient-to-t from-[#EFEBE3] to-[#FFF] px-[20px]  lg:px-p[0px]">
+  <div class="max-w-[1320px] m-auto">
+    <div class=" mb-[115px] navbar">
+      <div class="w-[100%] justify-between  lg:justify-start  flex flex-row-reverse lg:flex-row navbar-start">
+        <div class="dropdown">
+          <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+            <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="h-5 w-5"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor">
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M4 6h16M4 12h8m-8 6h16" />
+          </svg>
+        </div>
+      </div>
+      <div>
+      <img src="c2-assets/logo-header.png" alt="">
+      </div>
+    </div>
+    <div class="navbar-center hidden mr-[111px] lg:flex">
+      <ul class="menu menu-horizontal px-1">
+        <li><a class="text-xl font-normal">Product</a></li>
+        <li><a class="text-xl font-normal">Services</a></li>
+        <li><a class="text-xl font-normal">Contact us</a></li>
+      </ul>
+    </div>
+
+    <div class="hidden lg:flex flex gap-6 mr-6" >
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+          <path stroke-linecap="round" stroke-linejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
+        </svg>
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
+        </svg>
+        <div class="flex gap-3">
+          <a class="btn text-xl sora font-normal px-[30px] py-[10px] bg-white border-[#179800]">Login</a>
+          <a class="btn text-xl sora font-normal px-[30px] py-[10px] text-[#FFF] bg-[#179800]">Register</a>
+      </div>     
+    </div>
+  </div>
+
+
+    <div class="flex flex-col gap-9">
+        <!---hero-text--->
+        <div class="m-auto w-auto lg:w-[827px] flex flex-col text-center gap-8">
+            <h1 class="text-[56px] sora font-semibold">Freshness <span class="text-[#179800] sora font-semibold">You Can<br>
+                Count On </span>, Prices You’ll Love!</h1>
+            <p class="sora text-xl font-normal">Shop your daily essentials at unbeatable prices. From fresh produce to pantry staples, we’ve got you covered every day!</p>
+        </div>
+
+        <div class="flex justify-center"> 
+            <img src="c2-assets/hero-vegetables.png" alt="">
+        </div>
+
+    </div>
+</div>
+</section>
+
+
+<section class="w-full lg:w-[100%] flex-col m-auto pt-[100px] p-b[100px] lg:pt-[140px] lg:pb-[160px] md:px-8 sm:px-5 gap-8">
+    <div class="max-w-[1320px]">
+    <div class="">
+        <h1 class="sora font-semibold text-4xl text-[#179800]">Services</h1>
+    </div>
+    <!--Card parent--->
+    <div class="grid grid-cols-1 lg:grid-cols-3  gap-6"> 
+        <div class="card bg-[#EFEBE3] px-8 py-8 shadow-xl gap-6">
+            <figure class="">
+              <img
+                src="c2-assets/service.png"
+                alt="Shoes"
+                class="px-6 py-6 bg-white rounded-[100px]" />
+            </figure>
+            <div class="card-body flex flex-col gap-3 px-0 py-0 items-center text-center">
+              <h2 class="card-title text-2xl sora font-semibold text-[#111]">24/7 Services</h2>
+              <p class="sora text-xl font-light text-[#111]">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
+            </div>
+          </div>
+
+          <!--- card2--->
+          <div class="card bg-[#EFEBE3] px-8 py-8 shadow-xl gap-6">
+            <figure class=" ">
+              <img
+                src="c2-assets/delivery.png"
+                alt="Shoes"
+                class="px-6 py-6 bg-white rounded-[100px]  " />
+            </figure>
+            <div class="card-body flex flex-col gap-3 px-0 py-0 items-center text-center">
+              <h2 class="card-title text-2xl sora font-semibold text-[#111]">Fast Delivery</h2>
+              <p class="sora text-xl font-light text-[#111]">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
+            </div>
+          </div>
+
+
+          <!----Card 3------>
+
+          <div class="card bg-[#EFEBE3] px-8 py-8 shadow-xl gap-6">
+            <figure class=" ">
+              <img
+                src="c2-assets/healthy.png"
+                alt="Shoes"
+                class="px-6 py-6 bg-white rounded-[100px] " />
+            </figure>
+            <div class="card-body flex flex-col gap-3 px-0 py-0 items-center text-center">
+              <h2 class="card-title text-2xl sora font-semibold text-[#111]">Fast Delivery</h2>
+              <p class="sora text-xl font-light text-[#111]">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
+            </div>
+          </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="w-[1320px] lg:w-[100%] pt-[100px] p-b[100px] lg:pt-[140px] lg:pb-[160px] bg-[#EFEBE3] px-[20px]  lg:px-p[0px] pb-[100px] lg:pb-[auto] flex flex-col">
+    <div class=" w-[1320px] flex flex-col m-auto gap-[48px] ">
+<!--- Product Heading--->
+        <div class="">
+            <h1 class="sora font-semibold text-4xl text-[#179800]">Popular Products</h1>
+        </div>
+
+<!----Product card grid---->
+
+
+        <div class="flex flex-col lg:flex-row gap-6 ">
+            <div class="flex h-[402px] flex-1 gap-5 items-start px-[32px] py-[51px] rounded-xl flex-col bg-[linear-gradient(133deg,#53DB3A_25.67%,#FFF_108.6%)]">
+                <h1 class="adlam text-[32px] font-normal text-[#EFEBE3]">30% off</h1>
+                <p class="text-[16px] font-normal text-[#111111] sora ">Discover a world of treats, toys, and essentials handpicked for </p>
+                <button class="btn sora text-xl text-[#111] font-normal">Buy Now</button>
+                <img src="c2-assets/vege" alt="">
+            </div>
+
+            <div class="grid grid-cols-2 lg:grid-cols-3 gap-[23px]">
+              <!----Onion-->
+              <div class="px-4 py-4 flex flex-row gap-4 bg-white rounded-[10px] border-[#E7E7E7]">
+                <div>
+                  <img src="c2-assets/Group 16.png" alt="">
+                </div>
+                <div class="flex flex-col gap-2">
+                  <div class="flex flex-row gap-[11px]">
+                    <img class="w-[22px]" src="c2-assets/fi_2107957 (1).png" alt="">
+                    <h1 class="sora text-[16px] font-normal text-[#111]">4.5</h1>
+                  </div>
+                  <h1 class="sora font-medium text-xl text-[#111]">Onion 1 KG</h1>
+                  <h1 class="sora font-medium text-[16px] text-[#111]">$39.99</h1>
+                </div>
+              </div>
+              <!----Tomatoo---->
+
+              <div class="px-4 py-4 flex flex-row gap-4 bg-white rounded-[10px] border-[#E7E7E7]">
+                <div>
+                  <img src="c2-assets/Group 16 (1).png" alt="">
+                </div>
+                <div class="flex flex-col gap-2">
+                  <div class="flex flex-row gap-[11px]">
+                    <img class="w-[22px]" src="c2-assets/fi_2107957 (1).png" alt="">
+                    <h1 class="sora text-[16px] font-normal text-[#111]">4.5</h1>
+                  </div>
+                  <h1 class="sora font-medium text-xl text-[#111]">Tomato 500 g</h1>
+                  <h1 class="sora font-medium text-[16px] text-[#111]">$39.99</h1>
+                </div>
+              </div>
+
+            <!---Potato--->
+
+            <div class="px-4 py-4 flex flex-row gap-4 bg-white rounded-[10px] border-[#E7E7E7]">
+              <div>
+                <img src="c2-assets/Group 16 (2).png" alt="">
+              </div>
+              <div class="flex flex-col gap-2">
+                <div class="flex flex-row gap-[11px]">
+                  <img class="w-[22px]" src="c2-assets/fi_2107957 (1).png" alt="">
+                  <h1 class="sora text-[16px] font-normal text-[#111]">4.5</h1>
+                </div>
+                <h1 class="sora font-medium text-xl text-[#111]">Potato 1 KG</h1>
+                <h1 class="sora font-medium text-[16px] text-[#111]">$39.99</h1>
+              </div>
+            </div>
+
+          <!---Product row 2-->
+
+          <div class="px-4 py-4 flex flex-row gap-4 bg-white rounded-[10px] border-[#E7E7E7]">
+            <div>
+              <img src="c2-assets/Group 16.png" alt="">
+            </div>
+            <div class="flex flex-col gap-2">
+              <div class="flex flex-row gap-[11px]">
+                <img class="w-[22px]" src="c2-assets/fi_2107957 (1).png" alt="">
+                <h1 class="sora text-[16px] font-normal text-[#111]">4.5</h1>
+              </div>
+              <h1 class="sora font-medium text-xl text-[#111]">Onion 1 KG</h1>
+              <h1 class="sora font-medium text-[16px] text-[#111]">$39.99</h1>
+            </div>
+          </div>
+          
+          <!---2-->
+          <div class="px-4 py-4 flex flex-row gap-4 bg-white rounded-[10px] border-[#E7E7E7]">
+            <div>
+              <img src="c2-assets/Group 16 (2).png" alt="">
+            </div>
+            <div class="flex flex-col gap-2">
+              <div class="flex flex-row gap-[11px]">
+                <img class="w-[22px]" src="c2-assets/fi_2107957 (1).png" alt="">
+                <h1 class="sora text-[16px] font-normal text-[#111]">4.5</h1>
+              </div>
+              <h1 class="sora font-medium text-xl text-[#111]">Potato 1 KG</h1>
+              <h1 class="sora font-medium text-[16px] text-[#111]">$39.99</h1>
+            </div>
+          </div>
+
+          <!---3--->
+
+          <div class="px-4 py-4 flex flex-row gap-4 bg-white rounded-[10px] border-[#E7E7E7]">
+            <div>
+              <img src="c2-assets/Group 16.png" alt="">
+            </div>
+            <div class="flex flex-col gap-2">
+              <div class="flex flex-row gap-[11px]">
+                <img class="w-[22px]" src="c2-assets/fi_2107957 (1).png" alt="">
+                <h1 class="sora text-[16px] font-normal text-[#111]">4.5</h1>
+              </div>
+              <h1 class="sora font-medium text-xl text-[#111]">Onion 1 KG</h1>
+              <h1 class="sora font-medium text-[16px] text-[#111]">$39.99</h1>
+            </div>
+          </div>
+
+          <!---Product row 3--->
+
+          <div class="px-4 py-4 flex flex-row gap-4 bg-white rounded-[10px] border-[#E7E7E7]">
+            <div>
+              <img src="c2-assets/Group 16.png" alt="">
+            </div>
+            <div class="flex flex-col gap-2">
+              <div class="flex flex-row gap-[11px]">
+                <img class="w-[22px]" src="c2-assets/fi_2107957 (1).png" alt="">
+                <h1 class="sora text-[16px] font-normal text-[#111]">4.5</h1>
+              </div>
+              <h1 class="sora font-medium text-xl text-[#111]">Onion 1 KG</h1>
+              <h1 class="sora font-medium text-[16px] text-[#111]">$39.99</h1>
+            </div>
+          </div>
+
+          <!---2---->
+
+          <div class="px-4 py-4 flex flex-row gap-4 bg-white rounded-[10px] border-[#E7E7E7]">
+            <div>
+              <img src="c2-assets/Group 16.png" alt="">
+            </div>
+            <div class="flex flex-col gap-2">
+              <div class="flex flex-row gap-[11px]">
+                <img class="w-[22px]" src="c2-assets/fi_2107957 (1).png" alt="">
+                <h1 class="sora text-[16px] font-normal text-[#111]">4.5</h1>
+              </div>
+              <h1 class="sora font-medium text-xl text-[#111]">Onion 1 KG</h1>
+              <h1 class="sora font-medium text-[16px] text-[#111]">$39.99</h1>
+            </div>
+          </div>
+
+          <!---3-->
+          <div class="px-4 py-4 flex flex-row gap-4 bg-white rounded-[10px] border-[#E7E7E7]">
+            <div>
+              <img src="c2-assets/Group 16.png" alt="">
+            </div>
+            <div class="flex flex-col gap-2">
+              <div class="flex flex-row gap-[11px]">
+                <img class="w-[22px]" src="c2-assets/fi_2107957 (1).png" alt="">
+                <h1 class="sora text-[16px] font-normal text-[#111]">4.5</h1>
+              </div>
+              <h1 class="sora font-medium text-xl text-[#111]">Onion 1 KG</h1>
+              <h1 class="sora font-medium text-[16px] text-[#111]">$39.99</h1>
+            </div>
+          </div>
+
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!----Offers section---->
+
+<section class="w-full pt-[100px] p-b[100px] lg:pt-[140px] lg:pb-[160px]">
+  <div class="max-w-[1320px] m-auto flex flex-col gap-12">
+    <div class="">
+      <h1 class="sora font-semibold text-4xl text-[#179800]">Arrival & Offerss</h1>
+    </div>
+
+    <div class="flex flex-row justify-between">
+      <!----offers 1---->
+      <div class="flex w-[780px] pl-[40px] pt-[33px] bg-[#115414] rounded-3xl flex-row gap-[85px]">
+        <div class="flex flex-col">
+          <img class="mb-[31px]" src="c2-assets/dawat-logo.png" alt="">
+          <button class="mb-[26px] py-[15px] px-[40px] bg-[#63B76D] border-none rounded-xl poppins font-normal text-[23px] text-[#FFF]">Cook Exotic Dishes</button> 
+          <p class="font-normal text-[40px] text-[#FFF] ">UP to <span class="font-bold">20%</span> OFF</p>
+        </div>
+
+        <div class="">
+          <img src="c2-assets/dawat-mock-up.png" alt="">
+        </div>
+      </div>
+
+      <!----offers 2-->
+      <div class="flex w-[520px] pl-[40px] pt-[33px] bg-[#102861] rounded-3xl flex-row gap-2">
+        <div class="flex flex-col">
+          <img class="mb-[31px] w-[93px] " src="c2-assets/india-gate-logo.png" alt="">
+          <button class="mb-[26px] py-[15px] px-[40px] bg-[#2A4D97] border-none rounded-xl poppins font-normal text-[23px] text-[#FFF]">World’s No.1 Rice</button> 
+          <p class="font-normal text-[40px] text-[#FFF] ">UP to <span class="font-bold">40%</span> OFF</p>
+        </div>
+
+        <div class="">
+          <img src="c2-assets/india-gate-mock-up.png" alt="">
+        </div>
+      </div>
+
+    </div>
+
+
+  </div>
+</section>
+
+
+<!-------Form section------>
+<section class="w-[1320px] pt-[100px] p-b[100px] lg:pt-[140px] m-auto">
+  <div class="bg-[#EFEBE3] relative rounded-3xl flex flex-col lg:flex-row gap-[129px] lg:-mb-[229px] z-10 py-[55px] px-[102px]">
+    <div class="">
+      <img class="" src="c2-assets/vegetable-busket.png" alt="">
+    </div>
+
+    <div class="flex items-start justify-center flex-col">
+      <h1 class="sora font-semibold text-4xl text-[#111] mb-[22px]">Get Grocery News!</h1>
+      <p class="sora font-normal text-xl text-[#111] mb-[38px]">Exclusive training tips, ticks, product deals and more.</p>
+      <input type="email" placeholder="Enter email...." class="input w-[472px] mb-[36px]"/>
+      <input class="sora rounded-lg font-normal text-xl text-[#FFF] py-[10px] px-[30px] bg-[#179800]" type="button" value="Subscribe">
+    </div>
+  </div>
+</section>
+
+
+<!----Footer---->
+<section class=" pt-[100px] m-auto p-b[100px] lg:pt-[370px] lg:pb-[140px] bg-[#179800]">
+  <div class="w-[1320px] m-auto flex justify-between flex-row">
+    <div class="flex w-[428px] flex-col gap-3">
+      <img class="w-[154px]" src="c2-assets/logo-footer.png" alt="">
+      <p class="sora text-[#b3b3b3] font-normal text-xl">Discover a world of treats, toys, and essentials handpicked for your furry friends</p>
+    </div>
+
+    <div class="flex flex-col gap-8">
+
+      <h1 class="#EFEBE3 sora text-xl text-[#EFEBE3] font-normal">Product</h1>
+      <h1 class="#EFEBE3 sora text-xl text-[#EFEBE3] font-normal">Services</h1>
+      <h1 class="#EFEBE3 sora text-xl text-[#EFEBE3] font-normal">Contact us</h1>
+
+    </div>
+
+    <div class="flex flex-col gap-8">
+      <div>
+        <h1 class="sora font-medium text-[16px] text-[#EFEBE3] leading-[294%]">Follow Us</h1>
+      </div>
+
+      <div class="flex flex-row gap-[29px]">
+        <img src="c2-assets/Mask group.png" alt="">
+        <img src="c2-assets/Vector (2).png" alt="">
+        <img src="c2-assets/Vector (3).png" alt="">
+        <img src="c2-assets/Vector (4).png" alt="">
+      </div>
+
+    </div>
+
+  </div>
+</section>
+</body>
+</html>
